@@ -1,0 +1,39 @@
+pipeline:
+  name: pipeline-1
+  identifier: pipeline1
+  projectIdentifier: DevTesting
+  orgIdentifier: DoNotDeleteNikhil
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo 1
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
+        sendGitStatus:
+          enabled: true
+          name: <+pipeline.variables.customname>
+  variables:
+    - name: customname
+      type: String
+      description: ""
+      required: false
+      value: <+org.name>
