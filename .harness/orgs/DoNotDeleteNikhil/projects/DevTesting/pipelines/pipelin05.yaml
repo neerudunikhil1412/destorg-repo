@@ -1,0 +1,22 @@
+pipeline:
+  name: pipelin05
+  identifier: pipelin05
+  projectIdentifier: DevTesting
+  orgIdentifier: DoNotDeleteNikhil
+  tags: {}
+  stages:
+    - stage:
+        name: s2345
+        identifier: s2345
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: FilesUpload
+                  name: FilesUpload_1
+                  identifier: FilesUpload_1
+                  spec: {}
+                  timeout: 30m
+        tags: {}
