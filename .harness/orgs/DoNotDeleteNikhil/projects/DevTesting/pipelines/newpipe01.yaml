@@ -36,4 +36,4 @@ pipeline:
       type: String
       description: ""
       required: false
-      value: <+org.name>
+      value: <+stage.name>
