@@ -27,6 +27,16 @@ pipeline:
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
+          environment:
+            environmentRef: Demo
+            deployToAll: false
+            infrastructureDefinitions:
+              - identifier: infra1
+                inputs:
+                  identifier: infra1
+                  type: Pdc
+                  spec:
+                    hosts: <+input>
         tags: {}
         sendGitStatus:
           enabled: true
