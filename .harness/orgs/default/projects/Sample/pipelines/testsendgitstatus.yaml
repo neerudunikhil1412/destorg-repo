@@ -28,5 +28,5 @@ pipeline:
                   identifier: infra1
                   type: Pdc
                   spec:
-                    hosts: <+input>
+                    hosts: <+input>.executionInput()
         tags: {}
