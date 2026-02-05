@@ -36,4 +36,4 @@ pipeline:
       type: String
       description: ""
       required: true
-      value: uhqwash
+      value: <+stage.sendGitStatus.name>
