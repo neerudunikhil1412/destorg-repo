@@ -24,4 +24,9 @@ pipeline:
             deployToAll: false
             infrastructureDefinitions:
               - identifier: infra1
+                inputs:
+                  identifier: infra1
+                  type: Pdc
+                  spec:
+                    hosts: <+input>
         tags: {}
