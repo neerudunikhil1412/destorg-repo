@@ -30,4 +30,4 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: ""
+          name: helllo
