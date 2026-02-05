@@ -1,0 +1,25 @@
+pipeline:
+  name: pipeline-test
+  identifier: pipelinetest
+  projectIdentifier: testprojectNikhil
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: ww11
+        identifier: ww11
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+        tags: {}
+        sendGitStatus:
+          enabled: true
+          name: ""
