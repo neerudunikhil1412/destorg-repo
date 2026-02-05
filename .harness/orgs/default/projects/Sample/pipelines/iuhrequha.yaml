@@ -1,0 +1,25 @@
+pipeline:
+  name: iuhrequha
+  identifier: iuhrequha
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: rfhiedhs
+        identifier: rfhiedhs
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+        tags: {}
+        sendGitStatus:
+          enabled: true
+          name: ""
