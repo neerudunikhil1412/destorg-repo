@@ -1,6 +1,6 @@
 pipeline:
-  name: newpipe01
-  identifier: newpipe01
+  name: pipeline-1
+  identifier: pipeline1
   projectIdentifier: DevTesting
   orgIdentifier: DoNotDeleteNikhil
   tags: {}
@@ -23,18 +23,17 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo 10
+                        script: echo 1
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
         tags: {}
         sendGitStatus:
           enabled: true
-          name: ""
+          name: <+pipeline.variables.customname>
   variables:
     - name: customname
       type: String
       description: ""
-      required: true
-      value: uhqwash
-
+      required: false
+      value: <+org.name>

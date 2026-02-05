@@ -1,13 +1,12 @@
 pipeline:
-  name: newpipe01
-  identifier: newpipe01
+  identifier: pipeline07
   projectIdentifier: DevTesting
-  orgIdentifier: DoNotDeleteNikhil
+  orgIdentifier: DoNotDeleteNikhilDestOrg
   tags: {}
   stages:
     - stage:
-        name: s1
-        identifier: s1
+        name: S1
+        identifier: S1
         description: ""
         type: Custom
         spec:
@@ -28,13 +27,4 @@ pipeline:
                     outputVariables: []
                   timeout: 10m
         tags: {}
-        sendGitStatus:
-          enabled: true
-          name: ""
-  variables:
-    - name: customname
-      type: String
-      description: ""
-      required: true
-      value: uhqwash
-
+  name: pipeline07
