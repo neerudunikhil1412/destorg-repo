@@ -36,8 +36,4 @@ pipeline:
       type: String
       description: ""
       required: true
-<<<<<<< test01
       value: <+stage.name>
-=======
-      value: uhqwash
->>>>>>> main
