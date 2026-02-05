@@ -35,5 +35,5 @@ pipeline:
     - name: customname
       type: String
       description: ""
-      required: false
+      required: true
       value: uhqwash
