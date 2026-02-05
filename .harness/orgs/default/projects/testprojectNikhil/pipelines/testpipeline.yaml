@@ -23,11 +23,11 @@ pipeline:
                     source:
                       type: Inline
                       spec:
-                        script: echo 10
+                        script: echo 9
                     environmentVariables: []
                     outputVariables: []
                   timeout: 10m
         tags: {}
         sendGitStatus:
           enabled: true
-          name: hello
+          name: helllo
