@@ -32,4 +32,4 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: ""
+          name: kjhfdsj
