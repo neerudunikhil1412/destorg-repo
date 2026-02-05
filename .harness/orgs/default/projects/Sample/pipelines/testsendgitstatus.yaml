@@ -6,8 +6,8 @@ pipeline:
   tags: {}
   stages:
     - stage:
-        name: s11
-        identifier: s11
+        name: uytfrfd
+        identifier: uytfrfd
         description: ""
         type: Custom
         spec:
@@ -19,14 +19,7 @@ pipeline:
                   identifier: Wait_1
                   spec:
                     duration: 10s
-          environment:
-            environmentRef: Demo
-            deployToAll: false
-            infrastructureDefinitions:
-              - identifier: infra1
-                inputs:
-                  identifier: infra1
-                  type: Pdc
-                  spec:
-                    hosts: <+input>.executionInput()
         tags: {}
+        sendGitStatus:
+          enabled: true
+          name: ""
