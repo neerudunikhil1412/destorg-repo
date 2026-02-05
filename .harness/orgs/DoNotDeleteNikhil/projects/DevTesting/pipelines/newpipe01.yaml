@@ -36,4 +36,4 @@ pipeline:
       type: String
       description: ""
       required: true
-      value: <+stage.sendGitStatus.name>
+      value: <+stage.name>
