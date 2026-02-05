@@ -1,0 +1,22 @@
+pipeline:
+  name: inline-new
+  identifier: inlinenew
+  projectIdentifier: DevTesting
+  orgIdentifier: DoNotDeleteNikhil
+  tags: {}
+  stages:
+    - stage:
+        name: hewfidu
+        identifier: hewfidu
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: FilesUpload
+                  name: FilesUpload_1
+                  identifier: FilesUpload_1
+                  spec: {}
+                  timeout: 30m
+        tags: {}

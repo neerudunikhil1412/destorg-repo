@@ -1,13 +1,13 @@
 pipeline:
-  name: newpipe01
-  identifier: newpipe01
-  projectIdentifier: DevTesting
-  orgIdentifier: DoNotDeleteNikhil
+  name: new-pipeline-test
+  identifier: newpipelinetest
+  projectIdentifier: Sample
+  orgIdentifier: default
   tags: {}
   stages:
     - stage:
-        name: s1
-        identifier: s1
+        name: js11
+        identifier: js11
         description: ""
         type: Custom
         spec:
@@ -31,10 +31,3 @@ pipeline:
         sendGitStatus:
           enabled: true
           name: ""
-  variables:
-    - name: customname
-      type: String
-      description: ""
-      required: true
-      value: uhqwash
-

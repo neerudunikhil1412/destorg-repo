@@ -1,0 +1,25 @@
+pipeline:
+  name: test-send-git-status
+  identifier: testsendgitstatus
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: uytfrfd
+        identifier: uytfrfd
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+        tags: {}
+        sendGitStatus:
+          enabled: true
+          name: ""
