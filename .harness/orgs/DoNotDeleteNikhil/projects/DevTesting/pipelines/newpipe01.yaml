@@ -30,11 +30,10 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: ""
+          name: <+pipeline.variables.customname>
   variables:
     - name: customname
       type: String
       description: ""
       required: true
       value: uhqwash
-
