@@ -1,13 +1,13 @@
 pipeline:
-  name: iuhrequha
-  identifier: iuhrequha
-  projectIdentifier: Sample
+  name: pipeline-test
+  identifier: pipelinetest
+  projectIdentifier: testprojectNikhil
   orgIdentifier: default
   tags: {}
   stages:
     - stage:
-        name: rfhiedhs
-        identifier: rfhiedhs
+        name: ww11
+        identifier: ww11
         description: ""
         type: Custom
         spec:
@@ -18,8 +18,8 @@ pipeline:
                   name: Wait_1
                   identifier: Wait_1
                   spec:
-                    duration: 15s
+                    duration: 10s
         tags: {}
         sendGitStatus:
           enabled: true
-          name: hello
+          name: jhiudgf
