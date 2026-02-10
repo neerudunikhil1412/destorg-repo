@@ -28,4 +28,9 @@ pipeline:
       type: String
       description: ""
       required: false
+      value: <+pipeline.variables.cust2>
+    - name: cust2
+      type: String
+      description: ""
+      required: false
       value: <+org.name>
