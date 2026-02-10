@@ -22,4 +22,4 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: hello
+          name: <+org.name>/<+pipeline.name>
