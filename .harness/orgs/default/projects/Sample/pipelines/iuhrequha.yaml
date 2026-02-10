@@ -22,4 +22,10 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: <+org.name>/<+pipeline.name>
+          name: <+pipeline.variables.customvar>
+  variables:
+    - name: customvar
+      type: String
+      description: ""
+      required: false
+      value: <+org.name>
