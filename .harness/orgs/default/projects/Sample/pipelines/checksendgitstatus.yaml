@@ -22,7 +22,7 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: <+org.name>/<+pipeline.name>
+          name: <+pipeline.variables.custvar>
   variables:
     - name: custvar1
       type: String
