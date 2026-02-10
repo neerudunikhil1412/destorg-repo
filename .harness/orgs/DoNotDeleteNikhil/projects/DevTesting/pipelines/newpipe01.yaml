@@ -2,7 +2,7 @@ pipeline:
   name: newpipe01
   identifier: newpipe01
   projectIdentifier: DevTesting
-  orgIdentifier: DoNotDeleteNikhil
+  orgIdentifier: DoNotDeleteNikhil3
   tags: {}
   stages:
     - stage:
@@ -30,7 +30,7 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: <+org.identifier>/<+pipeline.name>
+          name: <+org.identifier>
   variables:
     - name: customname
       type: String
