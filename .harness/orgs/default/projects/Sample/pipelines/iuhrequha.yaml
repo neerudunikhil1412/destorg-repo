@@ -22,7 +22,7 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: <+pipeline.variables.customvar>
+          name: ijds
   variables:
     - name: customvar
       type: String
