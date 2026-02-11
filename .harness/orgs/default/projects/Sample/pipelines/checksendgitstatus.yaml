@@ -1,13 +1,13 @@
 pipeline:
-  name: iuhrequha
-  identifier: iuhrequha
+  name: check-send-git-status
+  identifier: checksendgitstatus
   projectIdentifier: Sample
   orgIdentifier: default
   tags: {}
   stages:
     - stage:
-        name: rfhiedhs
-        identifier: rfhiedhs
+        name: stage-1
+        identifier: stage1
         description: ""
         type: Custom
         spec:
@@ -18,19 +18,19 @@ pipeline:
                   name: Wait_1
                   identifier: Wait_1
                   spec:
-                    duration: 15s
+                    duration: 10s
         tags: {}
         sendGitStatus:
           enabled: true
-          name: ijds
+          name: <+pipeline.variables.custvar>/<+pipeline.name>
   variables:
-    - name: customvar
-      type: String
-      description: ""
-      required: false
-      value: <+pipeline.variables.cust2>
-    - name: cust2
+    - name: custvar1
       type: String
       description: ""
       required: false
       value: <+org.name>
+    - name: custvar
+      type: String
+      description: ""
+      required: false
+      value: <+pipeline.variables.custvar1>
