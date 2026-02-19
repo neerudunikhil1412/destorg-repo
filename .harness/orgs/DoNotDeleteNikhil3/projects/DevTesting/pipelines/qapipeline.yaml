@@ -1,0 +1,25 @@
+pipeline:
+  name: qa-pipeline
+  identifier: qapipeline
+  projectIdentifier: DevTesting
+  orgIdentifier: DoNotDeleteNikhil3
+  tags: {}
+  stages:
+    - stage:
+        name: ewfiu
+        identifier: ewfiu
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+        tags: {}
+        sendGitStatus:
+          enabled: true
+          name: sryy
