@@ -30,7 +30,7 @@ pipeline:
         tags: {}
         sendGitStatus:
           enabled: true
-          name: <+pipeline.variables.customname>
+          name: <+pipeline.variables.custvar>/<+pipeline.name>
   variables:
     - name: customname
       type: String
