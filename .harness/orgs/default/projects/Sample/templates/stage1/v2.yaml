@@ -1,6 +1,6 @@
 template:
   name: stage2
-  identifier: stage2
+  identifier: stage211
   versionLabel: v2
   type: Stage
   projectIdentifier: Sample
