@@ -1,7 +1,7 @@
 template:
-  name: stage21
+  name: stage211
   identifier: stage1
-  versionLabel: v2
+  versionLabel: v22
   type: Stage
   projectIdentifier: Sample
   orgIdentifier: default
