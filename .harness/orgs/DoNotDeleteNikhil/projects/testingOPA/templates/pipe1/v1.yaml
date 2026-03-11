@@ -1,5 +1,5 @@
 template:
-  name: pipe-1
+  name: pipe-12
   identifier: pipe1
   versionLabel: v1
   type: Pipeline
