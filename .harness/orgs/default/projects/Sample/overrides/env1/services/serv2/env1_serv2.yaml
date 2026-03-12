@@ -1,6 +1,6 @@
 overrides:
   variables:
-    - name: key1
+    - name: key12
       type: String
       value: "123"
       required: false
