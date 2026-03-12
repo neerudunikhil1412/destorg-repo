@@ -3,3 +3,7 @@ service:
   identifier: serv12
   orgIdentifier: default
   projectIdentifier: Sample
+  gitOpsEnabled: false
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
