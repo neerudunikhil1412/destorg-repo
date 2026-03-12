@@ -1,0 +1,5 @@
+service:
+  name: ser
+  identifier: ser
+  orgIdentifier: default
+  projectIdentifier: Sample

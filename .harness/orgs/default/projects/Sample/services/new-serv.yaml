@@ -1,0 +1,5 @@
+service:
+  name: serv213
+  identifier: new-serv
+  orgIdentifier: default
+  projectIdentifier: Sample

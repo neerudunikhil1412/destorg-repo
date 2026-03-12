@@ -1,13 +1,13 @@
 pipeline:
-  name: pipelin--1
-  identifier: pipelin--1
+  name: check-1
+  identifier: checksendgitstatus1
   projectIdentifier: Sample
   orgIdentifier: default
   tags: {}
   stages:
     - stage:
-        name: js11
-        identifier: js11
+        name: stag222-1
+        identifier: stage1
         description: ""
         type: Custom
         spec:
@@ -19,17 +19,18 @@ pipeline:
                   identifier: Wait_1
                   spec:
                     duration: 10s
-          environment:
-            environmentRef: Demo
-            deployToAll: false
-            infrastructureDefinitions:
-              - identifier: infra1
-                inputs:
-                  identifier: infra1
-                  type: Pdc
-                  spec:
-                    hosts: <+input>
         tags: {}
         sendGitStatus:
           enabled: true
-          name: kjhfdsj
+          name: <+pipeline.variables.custvar>/<+pipeline.name>
+  variables:
+    - name: custvar1
+      type: String
+      description: ""
+      required: false
+      value: <+org.name>
+    - name: custvar
+      type: String
+      description: ""
+      required: false
+      value: <+pipeline.variables.custvar1>
