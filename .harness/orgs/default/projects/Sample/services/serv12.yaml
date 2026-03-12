@@ -1,0 +1,5 @@
+service:
+  name: serv3
+  identifier: serv12
+  orgIdentifier: default
+  projectIdentifier: Sample
