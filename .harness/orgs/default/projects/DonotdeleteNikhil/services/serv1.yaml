@@ -1,0 +1,5 @@
+service:
+  name: serv1
+  identifier: serv1
+  orgIdentifier: default
+  projectIdentifier: DonotdeleteNikhil
