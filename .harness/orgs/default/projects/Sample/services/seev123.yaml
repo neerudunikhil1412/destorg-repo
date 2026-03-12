@@ -1,0 +1,5 @@
+service:
+  name: seev123
+  identifier: seev123
+  orgIdentifier: default
+  projectIdentifier: Sample
