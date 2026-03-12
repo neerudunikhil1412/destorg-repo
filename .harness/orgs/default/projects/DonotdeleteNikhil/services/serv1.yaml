@@ -3,3 +3,6 @@ service:
   identifier: serv1
   orgIdentifier: default
   projectIdentifier: DonotdeleteNikhil
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes
