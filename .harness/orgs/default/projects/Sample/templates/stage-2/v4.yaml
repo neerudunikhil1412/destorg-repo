@@ -1,5 +1,5 @@
 template:
-  name: stage2
+  name: stage211
   identifier: stage2
   versionLabel: v4
   type: Stage
