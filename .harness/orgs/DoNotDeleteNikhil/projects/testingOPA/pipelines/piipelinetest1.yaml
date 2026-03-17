@@ -1,8 +1,8 @@
 pipeline:
-  name: newpiplin1
-  identifier: newpipelin1
-  projectIdentifier: Sample
-  orgIdentifier: default
+  name: piipeline-test1
+  identifier: piipelinetest1
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil
   tags: {}
   stages:
     - stage:
