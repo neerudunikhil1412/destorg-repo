@@ -1,0 +1,5 @@
+service:
+  name: my-serv1
+  identifier: myserv1
+  orgIdentifier: DoNotDeleteNikhil
+  projectIdentifier: testingOPA
