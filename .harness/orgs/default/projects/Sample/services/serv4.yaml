@@ -1,0 +1,5 @@
+service:
+  name: serv4
+  identifier: serv4
+  orgIdentifier: default
+  projectIdentifier: Sample

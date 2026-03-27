@@ -1,0 +1,22 @@
+pipeline:
+  name: pipeee-123
+  identifier: pipeee123
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}

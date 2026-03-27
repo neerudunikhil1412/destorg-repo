@@ -1,0 +1,19 @@
+template:
+  name: s1
+  identifier: s1
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: Wait
+              name: Wait_1
+              identifier: Wait_1
+              spec:
+                duration: 1m 50s
