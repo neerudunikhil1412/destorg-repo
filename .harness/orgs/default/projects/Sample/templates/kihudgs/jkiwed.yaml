@@ -1,0 +1,21 @@
+template:
+  name: kihudgs
+  identifier: kihudgs
+  versionLabel: jkiwed
+  type: Step
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      executionTarget: {}
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: echo 1010
+      environmentVariables: []
+      outputVariables: []
