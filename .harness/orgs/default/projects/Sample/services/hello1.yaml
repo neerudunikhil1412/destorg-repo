@@ -1,0 +1,5 @@
+service:
+  name: hello1
+  identifier: hello1
+  orgIdentifier: default
+  projectIdentifier: Sample

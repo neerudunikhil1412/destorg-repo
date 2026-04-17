@@ -1,0 +1,35 @@
+pipeline:
+  name: pipeline4321
+  identifier: pipeline4321
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: js11
+        identifier: js11
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+          environment:
+            environmentRef: Demo
+            deployToAll: false
+            infrastructureDefinitions:
+              - identifier: infra1
+                inputs:
+                  identifier: infra1
+                  type: Pdc
+                  spec:
+                    hosts: <+input>
+        tags: {}
+        sendGitStatus:
+          enabled: true
+          name: kjhfdsj

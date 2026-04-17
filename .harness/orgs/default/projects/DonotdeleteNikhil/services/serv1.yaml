@@ -1,0 +1,8 @@
+service:
+  name: serv12
+  identifier: serv1
+  orgIdentifier: default
+  projectIdentifier: DonotdeleteNikhil
+  serviceDefinition:
+    spec: {}
+    type: Kubernetes

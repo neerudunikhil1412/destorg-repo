@@ -1,0 +1,19 @@
+template:
+  name: stage211
+  identifier: stage2
+  versionLabel: v4
+  type: Stage
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: Wait
+              name: Wait_1
+              identifier: Wait_1
+              spec:
+                duration: 10m

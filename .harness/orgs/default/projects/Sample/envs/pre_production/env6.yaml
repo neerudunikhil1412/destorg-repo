@@ -1,0 +1,6 @@
+environment:
+  name: env-6
+  identifier: env6
+  orgIdentifier: default
+  projectIdentifier: Sample
+  type: PreProduction

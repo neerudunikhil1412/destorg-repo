@@ -1,0 +1,6 @@
+environment:
+  name: env-98
+  identifier: env98
+  orgIdentifier: default
+  projectIdentifier: Sample
+  type: PreProduction
