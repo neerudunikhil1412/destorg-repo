@@ -13,18 +13,35 @@ pipeline:
         spec:
           execution:
             steps:
-              - step:
-                  type: ShellScript
-                  name: ShellScript_1
-                  identifier: ShellScript_1
-                  spec:
-                    shell: Bash
-                    executionTarget: {}
-                    source:
-                      type: Inline
+              - parallel:
+                  - step:
+                      type: ShellScript
+                      name: ShellScript_1
+                      identifier: ShellScript_1
                       spec:
-                        script: echo 10
-                    environmentVariables: []
-                    outputVariables: []
-                  timeout: 10m
+                        shell: Bash
+                        executionTarget: {}
+                        source:
+                          type: Inline
+                          spec:
+                            script: echo 10
+                        environmentVariables: []
+                        outputVariables: []
+                      timeout: 10m
+                  - stepGroup:
+                      name: test
+                      identifier: test
+                      steps:
+                        - step:
+                            type: Wait
+                            name: Wait_1
+                            identifier: Wait_1
+                            spec:
+                              duration: 10s
+                        - step:
+                            type: Wait
+                            name: Wait_2
+                            identifier: Wait_2
+                            spec:
+                              duration: 10s
         tags: {}
