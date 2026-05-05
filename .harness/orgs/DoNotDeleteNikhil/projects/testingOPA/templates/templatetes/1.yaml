@@ -25,3 +25,13 @@ template:
                 environmentVariables: []
                 outputVariables: []
               timeout: 10m
+      environment:
+        environmentRef: env1
+        deployToAll: false
+        infrastructureDefinitions:
+          - identifier: infra33
+            inputs:
+              identifier: infra33
+              type: KubernetesDirect
+              spec:
+                provisioner: <+input>
