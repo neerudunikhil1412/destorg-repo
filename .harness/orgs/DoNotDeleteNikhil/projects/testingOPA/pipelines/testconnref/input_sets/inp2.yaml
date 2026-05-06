@@ -1,0 +1,22 @@
+inputSet:
+  name: inp2
+  identifier: inp2
+  orgIdentifier: DoNotDeleteNikhil
+  projectIdentifier: testingOPA
+  pipeline:
+    identifier: testconnref
+    stages:
+      - stage:
+          identifier: S1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: ShellScript_1
+                    type: ShellScript
+                    spec:
+                      environmentVariables:
+                        - name: runvar1
+                          type: String
+                          value: "20"
