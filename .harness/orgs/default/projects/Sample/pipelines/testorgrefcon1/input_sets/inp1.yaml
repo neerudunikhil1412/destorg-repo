@@ -1,0 +1,19 @@
+inputSet:
+  name: inp1
+  identifier: inp1
+  orgIdentifier: default
+  projectIdentifier: Sample
+  pipeline:
+    identifier: testorgrefcon1
+    stages:
+      - stage:
+          identifier: S1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10s
