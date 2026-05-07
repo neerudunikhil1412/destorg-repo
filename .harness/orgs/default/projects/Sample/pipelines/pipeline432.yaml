@@ -18,7 +18,7 @@ pipeline:
                   name: Wait_1
                   identifier: Wait_1
                   spec:
-                    duration: 10s
+                    duration: <+input>
           environment:
             environmentRef: Demo
             deployToAll: false
