@@ -1,0 +1,14 @@
+pipeline:
+  name: nyc
+  identifier: nyc
+  tags: {}
+  projectIdentifier: Sample
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: s2
+        identifier: s2
+        tags: {}
+        template:
+          templateRef: stage2
+          versionLabel: v4
