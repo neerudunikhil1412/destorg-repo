@@ -1,0 +1,12 @@
+template:
+  name: testing1
+  identifier: testing1
+  versionLabel: v2
+  type: Step
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
