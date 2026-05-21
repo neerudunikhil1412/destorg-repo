@@ -1,0 +1,22 @@
+pipeline:
+  name: bjswhqab
+  identifier: bjswhqab
+  tags: {}
+  projectIdentifier: Sample
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: KJSXHZ
+        identifier: KJSXHZ
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+        tags: {}
