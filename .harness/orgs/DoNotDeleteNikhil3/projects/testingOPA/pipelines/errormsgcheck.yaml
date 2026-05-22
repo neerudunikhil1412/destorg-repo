@@ -6,31 +6,17 @@ pipeline:
   orgIdentifier: DoNotDeleteNikhil3
   stages:
     - stage:
-        name: CI_Repro
-        identifier: CI_Repro
-        type: CI
+        name: S1
+        identifier: S1
+        description: ""
+        type: Custom
         spec:
-          cloneCodebase: false
-          infrastructure:
-            type: KubernetesDirect
-            spec:
-              connectorRef: account.qaprivategke
-              namespace: harness
-              automountServiceAccountToken: true
-              nodeSelector: {}
-              os: Linux
           execution:
             steps:
               - step:
-                  type: Run
-                  name: Run_1
-                  identifier: Run_1
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
                   spec:
-                    connectorRef: account.harnessImage
-                    image: alpine
-                    shell: Sh
-                    command: echo hello
-                    outputVariables:
-                      - name: badOut
-                        type: Secret
-                        value: <+secrets.getValue("secret1")>
+                    duration: <+input>
+        tags: {}
