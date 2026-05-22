@@ -1,0 +1,19 @@
+inputSet:
+  name: input-set-1
+  identifier: inputset1
+  orgIdentifier: DoNotDeleteNikhil3
+  projectIdentifier: testingOPA
+  pipeline:
+    identifier: errormsgcheck
+    stages:
+      - stage:
+          identifier: S1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10s
