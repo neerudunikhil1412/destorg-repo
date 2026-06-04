@@ -1,0 +1,25 @@
+template:
+  name: jhwdsgxua
+  identifier: jhwdsgxua
+  versionLabel: v2
+  type: Pipeline
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: f2
+          identifier: f2
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}

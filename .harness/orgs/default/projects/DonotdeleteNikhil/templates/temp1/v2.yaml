@@ -1,0 +1,25 @@
+template:
+  name: temp12
+  identifier: temp12
+  versionLabel: v2
+  type: Pipeline
+  projectIdentifier: DonotdeleteNikhil
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: s1
+          identifier: s1
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}

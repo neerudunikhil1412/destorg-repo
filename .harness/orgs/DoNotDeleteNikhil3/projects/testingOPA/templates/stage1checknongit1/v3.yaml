@@ -1,0 +1,27 @@
+template:
+  name: stage1-check-non-git1
+  identifier: stage1checknongit1
+  versionLabel: v3
+  type: Stage
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil3
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: ShellScript
+              name: ShellScript_1
+              identifier: ShellScript_1
+              spec:
+                shell: Bash
+                executionTarget: {}
+                source:
+                  type: Inline
+                  spec:
+                    script: echo 10
+                environmentVariables: []
+                outputVariables: []
+              timeout: 10m

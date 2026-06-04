@@ -1,0 +1,22 @@
+pipeline:
+  name: test-org-ref-con-1
+  identifier: testorgrefcon1
+  tags: {}
+  projectIdentifier: Sample
+  orgIdentifier: default
+  stages:
+    - stage:
+        name: S1
+        identifier: S1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: <+input>
+        tags: {}

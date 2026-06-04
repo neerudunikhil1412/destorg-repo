@@ -1,0 +1,6 @@
+environment:
+  name: env-96
+  identifier: env96
+  orgIdentifier: default
+  projectIdentifier: Sample
+  type: PreProduction

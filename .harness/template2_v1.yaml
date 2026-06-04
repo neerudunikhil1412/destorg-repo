@@ -1,0 +1,25 @@
+template:
+  name: template-21
+  identifier: template2
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: s1
+          identifier: s1
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10s
+          tags: {}

@@ -1,6 +1,6 @@
 pipeline:
-  name: pipelin--1
-  identifier: pipelin--1
+  name: newpiplin13
+  identifier: newpipelin13
   projectIdentifier: Sample
   orgIdentifier: default
   tags: {}

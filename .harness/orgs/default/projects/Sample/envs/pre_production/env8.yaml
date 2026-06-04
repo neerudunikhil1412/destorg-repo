@@ -1,0 +1,6 @@
+environment:
+  name: env-8
+  identifier: env8
+  orgIdentifier: default
+  projectIdentifier: Sample
+  type: PreProduction

@@ -1,0 +1,6 @@
+overrides:
+  variables:
+    - name: key12
+      type: String
+      value: "123"
+      required: false

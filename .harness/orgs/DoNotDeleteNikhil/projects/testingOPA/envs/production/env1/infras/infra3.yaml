@@ -1,0 +1,13 @@
+infrastructureDefinition:
+  name: infra3
+  identifier: infra3
+  orgIdentifier: DoNotDeleteNikhil
+  projectIdentifier: testingOPA
+  environmentRef: env1
+  deploymentType: Kubernetes
+  type: KubernetesDirect
+  spec:
+    connectorRef: testconnector
+    namespace: name1
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false

@@ -1,0 +1,12 @@
+template:
+  name: template-ff-1
+  identifier: templateff1
+  versionLabel: v1
+  type: Step
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil3
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10s
