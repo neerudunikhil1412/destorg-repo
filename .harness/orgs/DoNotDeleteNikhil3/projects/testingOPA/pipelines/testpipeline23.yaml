@@ -1,0 +1,14 @@
+pipeline:
+  name: test-pipeline-23
+  identifier: testpipeline23
+  tags: {}
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil3
+  stages:
+    - stage:
+        name: S1
+        identifier: S1
+        tags: {}
+        template:
+          templateRef: stage1checknongit1
+          versionLabel: v1
