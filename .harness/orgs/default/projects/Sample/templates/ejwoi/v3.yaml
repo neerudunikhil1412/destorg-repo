@@ -4,6 +4,7 @@ template:
   versionLabel: v3
   type: Pipeline
   projectIdentifier: Sample
+  description: "new description"
   orgIdentifier: default
   tags: {}
   spec:
