@@ -1,0 +1,22 @@
+template:
+  name: template-27
+  identifier: template27
+  versionLabel: v1
+  type: Step
+  projectIdentifier: Sample
+  orgIdentifier: default
+  description: new description
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      executionTarget: {}
+      delegateSelectors: []
+      source:
+        type: Inline
+        spec:
+          script: echo 10
+      environmentVariables: []
+      outputVariables: []
