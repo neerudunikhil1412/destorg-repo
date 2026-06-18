@@ -1,0 +1,20 @@
+template:
+  name: ejwoi
+  identifier: ejwoi
+  versionLabel: v7
+  type: Stage
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  description: "Singleton stage. Clones the repo, diffs against the target branch, and emits two output variables consumed by downstream stage-level matrix strategies:\nCHANGED_MODULES — comma-separated full paths from the repo root (e.g. modules/s3,modules/iam). Supports flat and one-level-nested module layouts.\nINTEGRATION_MATRIX — comma-separated module_name::test_name pairs (e.g. s3::integration_basic_tests,iam::integration_permissions_test) built by discovering all *.tftest.hcl files under each changed module's tests/ directory. Only populated for modules where at least one *.tf or *.tftest.hcl file changed — doc-only or config-only changes do not trigger integration tests. Set to NONE when no qualifying changes are found.\nBoth outputs are set to NONE when no changed modules are detected, allowing all downstream stages to skip cleanly via when conditions.\nRequired pipeline variables: artifact_connector_ref, golden_image_ref, target_branch, modules_root.\nMODULES_ROOT must be a single directory level (e.g. \"modules\", not \"src/modules\") because downstream step templates resolve module sub-paths by stripping the first path component."
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              type: Wait
+              name: Wait_1
+              identifier: Wait_1
+              spec:
+                duration: 10m
