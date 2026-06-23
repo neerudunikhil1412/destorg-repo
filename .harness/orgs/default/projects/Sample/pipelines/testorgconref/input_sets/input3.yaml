@@ -1,0 +1,19 @@
+inputSet:
+  name: input-3
+  identifier: input3
+  orgIdentifier: default
+  projectIdentifier: Sample
+  pipeline:
+    identifier: testorgconref
+    stages:
+      - stage:
+          identifier: S1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 20s
