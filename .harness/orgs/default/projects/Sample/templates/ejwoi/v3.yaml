@@ -1,0 +1,26 @@
+template:
+  name: ejwoi
+  identifier: ejwoi
+  versionLabel: v3
+  type: Pipeline
+  projectIdentifier: Sample
+  description: "new description"
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: hsj
+          identifier: hsj
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10s
+          tags: {}

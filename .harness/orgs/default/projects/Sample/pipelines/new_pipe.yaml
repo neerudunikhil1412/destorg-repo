@@ -1,6 +1,6 @@
 pipeline:
-  name: iuhrequhahhh
-  identifier: iuhrequha
+  name: new_pipe
+  identifier: new_pipe
   projectIdentifier: Sample
   orgIdentifier: default
   tags: {}

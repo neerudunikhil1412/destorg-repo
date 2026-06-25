@@ -1,0 +1,5 @@
+service:
+  name: nik234
+  identifier: nik234
+  orgIdentifier: default
+  projectIdentifier: Sample

@@ -1,0 +1,27 @@
+inputSet:
+  name: inp3
+  identifier: inp3
+  orgIdentifier: default
+  projectIdentifier: Sample
+  pipeline:
+    identifier: pipeline432
+    stages:
+      - stage:
+          identifier: js11
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10s
+            environment:
+              infrastructureDefinitions:
+                - identifier: infra1
+                  inputs:
+                    identifier: infra1
+                    type: Pdc
+                    spec:
+                      hosts: <+input>

@@ -1,0 +1,48 @@
+pipeline:
+  tags: {}
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil3
+  stages:
+    - stage:
+        name: S1
+        identifier: S1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    executionTarget: {}
+                    source:
+                      type: Inline
+                      spec:
+                        script: echo 10
+                    environmentVariables:
+                      - name: var1
+                        type: String
+                        value: <+input>
+                    outputVariables: []
+                  timeout: 10m
+        tags: {}
+    - stage:
+        name: S3
+        identifier: S3
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+        tags: {}
+  identifier: pipeline34_Clone
+  name: pipeline-34 - Clone

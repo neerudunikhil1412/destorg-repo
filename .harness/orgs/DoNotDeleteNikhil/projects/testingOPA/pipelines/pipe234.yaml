@@ -1,0 +1,37 @@
+pipeline:
+  name: pipe234
+  identifier: pipe234
+  projectIdentifier: testingOPA
+  orgIdentifier: DoNotDeleteNikhil
+  tags: {}
+  stages:
+    - stage:
+        name: w1
+        identifier: w1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}
+    - stage:
+        name: cvc
+        identifier: cvc
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10m
+        tags: {}

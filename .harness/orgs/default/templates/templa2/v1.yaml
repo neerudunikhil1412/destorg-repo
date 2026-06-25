@@ -1,0 +1,24 @@
+template:
+  name: templa2
+  identifier: templa2
+  versionLabel: v1
+  type: Pipeline
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: S2
+          identifier: S2
+          description: ""
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    type: Wait
+                    name: Wait_1
+                    identifier: Wait_1
+                    spec:
+                      duration: 10m
+          tags: {}
