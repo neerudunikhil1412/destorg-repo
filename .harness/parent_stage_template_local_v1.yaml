@@ -1,0 +1,19 @@
+template:
+  name: parent_stage_template_local
+  identifier: parent_stage_template_local
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - stepGroup:
+              name: unit_test
+              identifier: sa
+              template:
+                templateRef: account.Nikhil_unit_test_step_group_template_local
+                versionLabel: 1.6.2
