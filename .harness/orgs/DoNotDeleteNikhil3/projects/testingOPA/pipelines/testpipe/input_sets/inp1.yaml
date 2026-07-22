@@ -1,0 +1,11 @@
+inputSet:
+  name: inp1
+  identifier: inp1
+  orgIdentifier: DoNotDeleteNikhil3
+  projectIdentifier: testingOPA
+  pipeline:
+    identifier: testpipe
+    properties:
+      ci:
+        codebase:
+          build: ""
