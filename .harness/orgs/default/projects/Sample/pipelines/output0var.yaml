@@ -1,0 +1,36 @@
+pipeline:
+  name: output0var
+  identifier: output0var
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: rfhiedhs
+        identifier: rfhiedhs
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 15s
+        tags: {}
+        sendGitStatus:
+          enabled: true
+          name: ijds
+  variables:
+    - name: customvar
+      type: String
+      description: ""
+      required: false
+      value: <+pipeline.variables.cust2>
+    - name: cust2
+      type: String
+      description: ""
+      required: false
+      value: <+org.name>

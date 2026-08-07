@@ -1,0 +1,14 @@
+template:
+  name: unit_test_step_group_template_local
+  identifier: unit_test_step_group_template_local
+  type: StepGroup
+  spec:
+    steps:
+      - step:
+          type: Wait
+          name: Wait_1
+          identifier: Wait_1
+          spec:
+            duration: 12s
+    stageType: Custom
+  versionLabel: v2
