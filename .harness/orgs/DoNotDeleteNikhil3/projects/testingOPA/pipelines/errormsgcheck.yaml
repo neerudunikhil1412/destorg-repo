@@ -13,10 +13,43 @@ pipeline:
         spec:
           execution:
             steps:
-              - step:
-                  type: Wait
-                  name: Wait_1
-                  identifier: Wait_1
-                  spec:
-                    duration: <+input>
+              - parallel:
+                  - step:
+                      type: Wait
+                      name: Wait_1
+                      identifier: Wait_1
+                      spec:
+                        duration: <+input>
+                      failureStrategies:
+                        - onFailure:
+                            errors:
+                              - AllErrors
+                            action:
+                              type: PipelineRollback
+                  - step:
+                      type: ShellScript
+                      name: ShellScript_1
+                      identifier: ShellScript_1
+                      spec:
+                        shell: Bash
+                        executionTarget: {}
+                        source:
+                          type: Inline
+                          spec:
+                            script: exit 1
+                        environmentVariables: []
+                        outputVariables: []
+                      timeout: 10m
+                      failureStrategies:
+                        - onFailure:
+                            errors:
+                              - AllErrors
+                            action:
+                              type: PipelineRollback
         tags: {}
+        failureStrategies:
+          - onFailure:
+              errors:
+                - AllErrors
+              action:
+                type: PipelineRollback
