@@ -1,0 +1,19 @@
+inputSet:
+  name: inpu3
+  identifier: inpu3
+  orgIdentifier: DoNotDeleteNikhil3
+  projectIdentifier: testingOPA
+  pipeline:
+    identifier: move_git
+    stages:
+      - stage:
+          identifier: S1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10s
