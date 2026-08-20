@@ -19,7 +19,7 @@ pipeline:
                       name: Wait_1
                       identifier: Wait_1
                       spec:
-                        duration: <+input>
+                        duration: 20s
                       failureStrategies:
                         - onFailure:
                             errors:
