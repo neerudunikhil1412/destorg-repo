@@ -48,6 +48,8 @@ pipeline:
                               - AllErrors
                             action:
                               type: PipelineRollback
+                              spec:
+                                failAll: true
             rollbackSteps: []
         tags: {}
         failureStrategies:
