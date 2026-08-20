@@ -46,8 +46,8 @@ pipeline:
                               - AllErrors
                             action:
                               type: PipelineRollback
-                            spec:
-                              failAll: true
+                              spec:
+                                failAll: true
               - step:
                   type: Wait
                   name: Wait_2
