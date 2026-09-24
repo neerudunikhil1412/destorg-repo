@@ -1,5 +1,6 @@
 inputSet:
   name: input-set-1
+  tags: {}
   identifier: inputset1
   orgIdentifier: DoNotDeleteNikhil3
   projectIdentifier: testingOPA
@@ -12,8 +13,9 @@ inputSet:
           spec:
             execution:
               steps:
-                - step:
-                    identifier: Wait_1
-                    type: Wait
-                    spec:
-                      duration: 10s
+                - parallel:
+                    - step:
+                        identifier: Wait_1
+                        type: Wait
+                        spec:
+                          duration: 10s
