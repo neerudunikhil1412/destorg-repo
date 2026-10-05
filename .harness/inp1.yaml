@@ -1,0 +1,19 @@
+inputSet:
+  name: inp1
+  identifier: inp1
+  orgIdentifier: DoNotDeleteNikhil3
+  projectIdentifier: testingOPA
+  pipeline:
+    identifier: test_inp_repro
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10s
