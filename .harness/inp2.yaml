@@ -1,5 +1,6 @@
 inputSet:
   name: inp2
+  tags: {}
   identifier: inp2
   orgIdentifier: DoNotDeleteNikhil3
   projectIdentifier: testingOPA
