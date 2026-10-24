@@ -1,0 +1,25 @@
+template:
+  name: parent_stage_template_local
+  identifier: parent_stage_template_local
+  type: Stage
+  projectIdentifier: Sample
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - stepGroup:
+              name: unit_test
+              identifier: sa
+              template:
+                templateRef: account.unit_test_step_group_template_local
+                versionLabel: 1.6.1-local
+          - step:
+              type: Wait
+              name: Wait_1
+              identifier: Wait_1
+              spec:
+                duration: 10s
+  versionLabel: v2

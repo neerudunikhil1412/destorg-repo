@@ -1,0 +1,5 @@
+pipeline:
+  name: helloworld
+  identifier: helloworld
+  projectIdentifier: Sample
+  orgIdentifier: default

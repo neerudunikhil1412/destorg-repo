@@ -1,0 +1,19 @@
+inputSet:
+  name: inpu2
+  identifier: inpu2
+  orgIdentifier: DoNotDeleteNikhil3
+  projectIdentifier: testingOPA
+  pipeline:
+    identifier: test_harness
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 15s
