@@ -20,3 +20,15 @@ pipeline:
                   spec:
                     duration: <+input>
         tags: {}
+  notificationRules:
+    - name: test-datadog
+      identifier: testdatadog
+      pipelineEvents:
+        - type: PipelineStart
+      notificationMethod:
+        type: Datadog
+        spec:
+          userGroups: []
+          url: https://api.us5.datadoghq.com/api/v1/events
+          apiKey: fb6353916e38aada4c2ab59ba2f24395
+      enabled: true
